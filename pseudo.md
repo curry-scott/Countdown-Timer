@@ -1,3 +1,4 @@
+<details>
 Countdown Clock
 
 ##create folder and files
@@ -16,5 +17,7 @@ Countdown Clock
 -mins
 -seconds
 -stop the timer when reaches 0
+
+</details>
 
     
