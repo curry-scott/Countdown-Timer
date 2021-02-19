@@ -1,19 +1,19 @@
 body{
-  
-    margin: auto;
     margin-top: 50px;
-    margin-left: 450px; 
+    background: black;
+    
   }
-  .count {
+  .Countdown {
       font-family: sans-serif;
       font-size: 50px;
       font-weight: bolder;
       width: 20px;
-      color: black;
+      color: white;
       text-align: center;
-      border: 20px black;
+      border: 0px black;
       border-radius: 0px;
       margin: auto;
-      
+      margin-top: 50px;
+      margin-left: 450px;
   }
-     
+  
