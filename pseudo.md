@@ -7,16 +7,16 @@ Countdown Clock
 -JS
 
 ##24 hour-day countdown
--hours
--mins
--seconds
+- hours
+- mins
+- seconds
 
 ##date X countdown
--days
--hours
--mins
--seconds
--stop the timer when reaches 0
+- days
+- hours
+- mins
+- seconds
+- stop the timer when reaches 0
 
 </details>
 
