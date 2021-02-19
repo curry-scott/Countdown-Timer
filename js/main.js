@@ -26,7 +26,7 @@ const countDownDate = new Date("Jan 01, 2022 00:00:00").getTime();
             document.getElementById("hours").innerHTML = "" 
             document.getElementById("mins").innerHTML = ""
             document.getElementById("secs").innerHTML = ""
-            document.getElementById("end").innerHTML = "TIME UP!!";
+            document.getElementById("end").innerHTML = "!!HAPPY NEW YEAR!!";
         }
     }, 
     1000);
