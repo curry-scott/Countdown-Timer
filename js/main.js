@@ -12,4 +12,22 @@ let countDownDate = new Date("Jan 01,2022 00:00:00").getTime();
         let hours = Math.floor((timeleft %(1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((timeleft % (1000 *60 *60)) / 1000 * 60))
         let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-        
+
+    //Displaying days, hours, mins and secs
+        document.getElementById("days").innerHTML = days + "d"
+        document.getElementById("hours").innerHTML = hours + "h"
+        document.getElementById("mins").innerHTML = minutes + "m"
+        document.getElementById("secons").innerHTML + seconds + "s"
+
+    //Displaying countdown ending message
+        if (timeleft < 0) {
+            clearInterval(myfunc);
+            document.getElementById("days").innerHTML = ""
+            document.getElementById("hours").innerHTML = ""
+            document.getElementById("mins").innerHTML = ""
+            document.getElementById("secs").innerHTML = ""
+            document.getElementById("end").innerHTML = "!!!HAPPY NEW YEAR!!!"
+        }
+    }
+
+    1000);
