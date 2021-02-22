@@ -8,10 +8,7 @@ const countDownDate = new Date("Jan 01, 2022 00:00:00").getTime();
 
         // Setting days, hours, mins and secs to go 
         // 1000 milliseconds, 60 secs, 60 mins, 24 hours 
-        let days = Math.floor(timeleft / (1000 * 60 * 60 * 24)); 
-        let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+        let { days, hours, minutes, seconds } = newFunction(timeleft);
     
         //Displaying days, hours, mins and secs
         document.getElementById("days").innerHTML = days + "d "        
@@ -30,3 +27,11 @@ const countDownDate = new Date("Jan 01, 2022 00:00:00").getTime();
         }
     }, 
     1000);
+
+function newFunction(timeleft) {
+    let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    return { days, hours, minutes, seconds };
+}
